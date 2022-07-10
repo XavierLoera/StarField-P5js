@@ -2,7 +2,7 @@ var h = window.innerHeight; //gets window hight
 var w = window.innerWidth; //gets window width
 
 const stars = new Array() //create an empty array
-let speed
+let speed 
 
 
 setup = () => {
@@ -13,6 +13,10 @@ setup = () => {
 }
 
 draw = () => {
+  if (speed < 1) { // sets default speed when loading screen
+    mouseX = 12
+  }
+ 
   speed = map(mouseX,0,width,mouseX/10,0) // speed of stars based on Mouse x-axis from the center(closer to center the faster)
   background('black'); //change background color to black
   translate(w/2, h/2) // translate to center

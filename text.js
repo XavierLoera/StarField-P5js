@@ -1,6 +1,6 @@
 let character = 0;
-const fullText = "StarField visualizer using p5.js By Xavier Loera"
-document.addEventListener('mouseover', () => {
+const fullText = "          StarField visualizer using p5.js By Xavier Loera"
+document.addEventListener('DOMContentLoaded', () => {
     typeText()
 }, {once : true})
 
