@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     typeText()
 }, {once : true})
 
-const typeText = () => {
+const typeText = () => { //types inner text
     if(character < fullText.length) {
         document.getElementById("divElement").innerHTML += fullText.charAt(character)
         character++
