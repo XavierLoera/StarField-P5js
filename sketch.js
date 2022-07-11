@@ -8,7 +8,7 @@ let speed
 setup = () => {
   createCanvas(w, h); //create a full size canvas
   for(let i = 0; i < 1000; i++) {
-    stars[i] = new Star(); //create an array of 1000 Stars objects
+    stars[i] = new Stars(); //create an array of 1000 Stars objects
   }
 }
 
