@@ -17,7 +17,7 @@ draw = () => {
     mouseX = 12
   }
  
-  speed = map(mouseX,0,width,mouseX/10,0) // speed of stars based on Mouse x-axis from the center(closer to center the faster)
+  speed = map(mouseX,0,w,mouseX/10,0) // speed of stars based on Mouse x-axis from the center(closer to center the faster)
   background('black'); //change background color to black
   translate(w/2, h/2) // translate to center
   for(let i = 0; i < stars.length; i++) {
